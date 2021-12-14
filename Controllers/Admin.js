@@ -451,7 +451,7 @@ export const NonReturn = async (req, res) => {
     let db = client.db("inventory");
 
     //select connect action and perform action
-    let data = await db.collection("nonreturn").find().toArray();
+    let data = await db.collection("notreturn").find().toArray();
 
     res.status(200).json(data);
     //close the connection
